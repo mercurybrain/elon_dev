@@ -194,11 +194,10 @@ b, strong {
             &::before {
                 position: absolute;
                 content: "";
-                bottom: -5px;
-                right: 135px;
-                width: 45px;
-                height: 70px;
-                transform: rotateX(30deg);
+                bottom: 0;
+                right: 138px;
+                width: 50px;
+                height: 80px;
                 background-image: url('../img/mask.png');
                 background-position: cover;
                 background-repeat: no-repeat;
