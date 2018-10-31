@@ -40,7 +40,9 @@
 		<div class="logo-wrap corners">
 			<p>
 				<!-- Для границ через before, after -->
-				<img src="img/logo.png" alt="SpaceX" class="img-responsive">
+				<a href="#">
+					<img src="img/logo.png" alt="SpaceX" class="img-responsive">
+				</a>
 			</p>
 		</div>
 		<ul>
@@ -65,30 +67,32 @@
 				<div class="col-6">
 					<div class="content-right">
 						<div class="advantages">
-							<div class="row">
+							<div class="row no-gutters">
+								<!-- Пришлось задавать data-атрибуты, т.к. итемы находятся в разных контейнерах и их
+								невозможно стилизиовать через селекторы nth- -->
 								<div class="col-6">
-									<div class="advantage__item">
+									<div class="advantage__item" data-item="1">
 										<span class="advantage__text">
 											мы <p>1</p> на рынке
 										</span>
 									</div>
 								</div>
 								<div class="col-6">
-									<div class="advantage__item">
+									<div class="advantage__item" data-item="2">
 										<span class="advantage__text">
 											гарантируем <p>50%</p> безопасность
 										</span>
 									</div>
 								</div>
 								<div class="col-6">
-									<div class="advantage__item">
+									<div class="advantage__item" data-item="3">
 										<span class="advantage__text">
-											календарик за <p>2001<small>г.</small></p> в подарок
+											календарик за <p>2001<span>г.</span></p> в подарок
 										</span>
 									</div>
 								</div>
 								<div class="col-6">
-									<div class="advantage__item">
+									<div class="advantage__item" data-item="4">
 										<span class="advantage__text">
 											путешествие <p>597</p> дней
 										</span>
