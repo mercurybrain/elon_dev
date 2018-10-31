@@ -120,7 +120,7 @@ b, strong {
 
 .main {
     background: url('/img/background.png') center no-repeat;
-    background-size: cover;
+    background-size: 165%;
     padding-bottom: 150px;
     .main__nav {
         height: 100px;
@@ -181,7 +181,6 @@ b, strong {
     }
     .content-left {
         margin-top: 70px;
-        padding-left: 40px;
         &>h1 {
             display: block;
             position: relative;
@@ -196,12 +195,12 @@ b, strong {
                 position: absolute;
                 content: "";
                 bottom: -5px;
-                right: 100px;
-                width: 43px;
+                right: 135px;
+                width: 45px;
                 height: 70px;
                 transform: rotateX(30deg);
                 background-image: url('../img/mask.png');
-                background-position: contain;
+                background-position: cover;
                 background-repeat: no-repeat;
             }
         }
