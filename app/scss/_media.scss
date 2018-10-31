@@ -10,17 +10,86 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+    .main {
+        .mask-wrap {
+            display: none;
+        }
+    }
+    .navbar {
+        li {
+            display: block;
+            width: 50%;
+            border: none;
+            margin-left: 15px;
+            &:hover {
+                border: none;  
+            }
+           a {
+               font-size: 1.2em;
+           }
+        }
+    }
+    .main {
+        padding-bottom: 20px;
+        .content-left {
+            margin-top: 10px;
+            &>h1 {
+                background: linear-gradient(to bottom, white , $accent 95%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 2.7em;
+                text-align: center;
+            }
+            span {
+                font-size: 1.1em;
+                background: linear-gradient(to bottom, white , $accent 95%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+            .btn {
+                margin: 90px auto 10px;
+            }
+        }
+        .content-right {
+            width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+            .advantages {
+                .advantage__item {
+                    color: #b2b3b5;
+                    .advantage__text {
+                        p {
+                            color: #ececec;
+                        }
+                    }  
+                }
+            }
+        }
+    }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    .navbar {
+        .logo-wrap {width: 100%; margin-right: 0;}
+        .navbar-toggler{margin: 15px 45% 10px 45%;}
+    }
+    .content-right {
+        .advantages {
+            .advantage__item {
+                background: rgba(255, 255, 255, 0.05) !important;
+            }
+            .advantage__item[data-item='3'] {
+                margin-top: 100px !important;
+            }
+        }
+    }
 }
 
 
@@ -38,7 +107,7 @@
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-
+       
 }
 
 // ≤1200px
