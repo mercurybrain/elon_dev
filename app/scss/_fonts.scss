@@ -1,8 +1,6 @@
 @import "_mixins/font-face";
 
-@include font-face("Roboto", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("Roboto", "../fonts/RobotoBold/RobotoBold", bold);
-@include font-face("Roboto", "../fonts/RobotoLight/RobotoLight", 200);
-@include font-face("RobotoCondensed", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular");
-@include font-face("RobotoCondensed", "../fonts/RobotoCondensedBold/RobotoCondensedBold", bold);
-@include font-face("RobotoCondensed", "../fonts/RobotoCondensedLight/RobotoCondensedLight", 200);
+@include font-face("MuseoSans", "../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular");
+@include font-face("MuseoSans", "../fonts/MuseoSans/MuseoSansBold/MuseoSansBold", bold);
+@include font-face("MuseoSans", "../fonts/MuseoSans/MuseoSansLight/MuseoSansLight", 200);
+@include font-face("MuseoSans", "../fonts/MuseoSans/MuseoSansThin/MuseoSansThin", 100);
